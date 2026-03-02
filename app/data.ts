@@ -36,6 +36,7 @@ export const SITE_CONFIG = {
   company: 'ALP Soft',
   fullName: 'Toon (ALP Soft)',
   title: 'Full-Stack Developer & AI Solutions Architect',
+  version: '1.0.1',
   email: 'contact@alpsoft.dev',
   url: 'https://alpsoft.dev',
   ogImage: '/og-image.jpg',
