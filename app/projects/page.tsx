@@ -97,7 +97,7 @@ export default function ProjectsPage() {
         <div className="mt-16 rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8 text-center">
           <h2 className="text-2xl font-bold text-white">Have a project in mind?</h2>
           <p className="mx-auto mt-2 max-w-lg text-zinc-400">
-            Let's discuss how I can help architect a solution tailored to your business needs.
+            Let&apos;s discuss how I can help architect a solution tailored to your business needs.
           </p>
           <Link
             href="/contact"

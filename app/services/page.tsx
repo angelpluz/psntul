@@ -32,7 +32,7 @@ export default function ServicesPage() {
 
         {/* Services Grid */}
         <div className="grid gap-8 lg:grid-cols-2">
-          {SERVICES.map((service, index) => {
+          {SERVICES.map((service) => {
             const Icon = iconMap[service.icon]
             return (
               <div

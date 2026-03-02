@@ -17,7 +17,7 @@ export default function ContactPage() {
             Start a Project
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-400">
-            Have a project in mind? Let's discuss how we can architect a solution 
+            Have a project in mind? Let&apos;s discuss how we can architect a solution 
             that drives real business outcomes.
           </p>
         </div>

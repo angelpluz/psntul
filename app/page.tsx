@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Layers, Brain, RefreshCw, Zap, Code2, Database, Cloud } from 'lucide-react'
-import { PROJECTS, SERVICES, SITE_CONFIG } from './data'
+import { PROJECTS, SERVICES } from './data'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -277,7 +277,7 @@ export default function HomePage() {
                 Ready to architect your next solution?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-lg text-blue-100">
-                Let's discuss how scalable architecture and intelligent automation can transform your operations.
+                Let&apos;s discuss how scalable architecture and intelligent automation can transform your operations.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
