@@ -66,15 +66,13 @@ export default function ProjectsPage() {
                 {/* Links */}
                 <div className="flex items-center gap-4 pt-4 border-t border-zinc-800">
                   {project.link && (
-                    <a
+                    <Link
                       href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-sm font-medium text-blue-400 transition-colors hover:text-blue-300"
                     >
-                      View Project
+                      View Case Study
                       <ArrowUpRight className="h-4 w-4" />
-                    </a>
+                    </Link>
                   )}
                   {project.github && (
                     <a

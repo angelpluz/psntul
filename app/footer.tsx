@@ -16,12 +16,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="min-w-0 space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 text-sm font-bold text-white">
                 A
               </div>
-              <span className="text-lg font-semibold text-white">{SITE_CONFIG.company}</span>
+              <span className="break-words text-lg font-semibold text-white">{SITE_CONFIG.company}</span>
             </Link>
             <p className="text-sm text-zinc-400">
               Architecting scalable digital solutions for enterprise growth.
@@ -46,7 +46,7 @@ export function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="min-w-0">
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-500">
               Navigation
             </h3>
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="min-w-0">
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-500">
               Services
             </h3>
@@ -94,7 +94,7 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="min-w-0">
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-500">
               Contact
             </h3>
@@ -102,10 +102,10 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${SITE_CONFIG.email}`}
-                  className="flex items-center gap-2 text-sm text-zinc-400 transition-colors hover:text-white"
+                  className="flex min-w-0 items-start gap-2 text-sm text-zinc-400 transition-colors hover:text-white"
                 >
-                  <Mail className="h-4 w-4" />
-                  {SITE_CONFIG.email}
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0" />
+                  <span className="min-w-0 break-all">{SITE_CONFIG.email}</span>
                 </a>
               </li>
             </ul>
