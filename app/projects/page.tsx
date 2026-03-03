@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { PROJECTS, SITE_CONFIG } from '../data'
 import { ArrowUpRight, Github } from 'lucide-react'
 import Link from 'next/link'
@@ -30,13 +31,26 @@ export default function ProjectsPage() {
               key={project.id}
               className="group relative flex flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/30 transition-all hover:border-blue-500/30 hover:bg-zinc-900/50"
             >
-              {/* Image Placeholder */}
-              <div className="aspect-video overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900">
-                <div className="flex h-full items-center justify-center">
-                  <div className="text-6xl font-bold text-zinc-800">
-                    {project.name.charAt(0)}
+              {/* Cover */}
+              <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900">
+                {project.image ? (
+                  <>
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/50 via-transparent to-transparent" />
+                  </>
+                ) : (
+                  <div className="flex h-full items-center justify-center">
+                    <div className="text-6xl font-bold text-zinc-800">
+                      {project.name.charAt(0)}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
 
               {/* Content */}

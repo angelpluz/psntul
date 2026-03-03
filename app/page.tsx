@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Layers, Brain, RefreshCw, Zap, Code2, Database, Cloud } from 'lucide-react'
 import { PROJECTS, SERVICES } from './data'
@@ -196,7 +197,26 @@ export default function HomePage() {
                 transition={{ delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/50"
               >
-                <div className="aspect-video bg-gradient-to-br from-zinc-800 to-zinc-900" />
+                <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-zinc-800 to-zinc-900">
+                  {project.image ? (
+                    <>
+                      <Image
+                        src={project.image}
+                        alt={project.name}
+                        fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/50 via-transparent to-transparent" />
+                    </>
+                  ) : (
+                    <div className="flex h-full items-center justify-center">
+                      <div className="text-6xl font-bold text-zinc-800">
+                        {project.name.charAt(0)}
+                      </div>
+                    </div>
+                  )}
+                </div>
                 <div className="p-6">
                   <div className="mb-3 flex flex-wrap gap-2">
                     {project.tags.slice(0, 3).map((tag) => (
