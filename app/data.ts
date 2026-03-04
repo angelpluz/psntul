@@ -73,6 +73,14 @@ export const PROJECTS: Project[] = [
     link: '/projects/microservices-migration',
     featured: true,
   },
+  {
+    id: 'automotive-parts-commerce',
+    name: 'Automotive Parts Commerce Platform',
+    description: 'A full-stack automotive parts commerce MVP that models vehicle-compatible products, supports structured search, and handles order requests through a practical inquiry workflow.',
+    longDescription: 'A production-minded demo system built to showcase automotive commerce domain modeling, vehicle fitment structure, admin operations, and a maintainable API-driven architecture.',
+    tags: ['Vue.js', 'Node.js', 'Express', 'SQL'],
+    link: '/projects/automotive-parts-commerce',
+  },
 ]
 
 export const SERVICES: Service[] = [
