@@ -73,6 +73,16 @@ export const metadata: Metadata = {
     images: [SITE_CONFIG.ogImage],
     creator: '@alpsoft',
   },
+  icons: {
+    icon: [
+      {
+        url: '/pic/logotop.png?v=20260303',
+        type: 'image/png',
+      },
+    ],
+    shortcut: '/pic/logotop.png?v=20260303',
+    apple: '/pic/logotop.png?v=20260303',
+  },
   alternates: {
     canonical: '/',
   },

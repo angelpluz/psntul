@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { EXPERIENCE, SKILLS, SITE_CONFIG } from '../data'
 import { MapPin, Mail, Calendar } from 'lucide-react'
 import Link from 'next/link'
@@ -18,8 +19,16 @@ export default function AboutPage() {
             <div className="sticky top-24 space-y-6">
               {/* Profile Card */}
               <div className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6">
-                <div className="mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-3xl font-bold text-white">
-                  T
+                <div className="relative mb-5 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950/60 p-4">
+                  <div className="absolute inset-6 rounded-full bg-blue-500/10 blur-3xl" />
+                  <Image
+                    src="/pic/logotop-t.png"
+                    alt="ALPRASOFT CORP"
+                    width={768}
+                    height={768}
+                    priority
+                    className="relative h-auto w-full"
+                  />
                 </div>
                 <h1 className="text-2xl font-bold text-white">{SITE_CONFIG.name}</h1>
                 <p className="text-blue-400">{SITE_CONFIG.title}</p>
