@@ -1,4 +1,4 @@
-export type Project = {
+﻿export type Project = {
   id: string
   name: string
   description: string
@@ -76,10 +76,11 @@ export const PROJECTS: Project[] = [
   {
     id: 'automotive-parts-commerce',
     name: 'Automotive Parts Commerce Platform',
-    description: 'A full-stack automotive parts commerce MVP that models vehicle-compatible products, supports structured search, and handles order requests through a practical inquiry workflow.',
-    longDescription: 'A production-minded demo system built to showcase automotive commerce domain modeling, vehicle fitment structure, admin operations, and a maintainable API-driven architecture.',
+    description: 'OCR-documented automotive commerce MVP covering campaign storefront, fitment-aware catalog browsing, order-number tracking, and admin order operations.',
+    longDescription: 'A full-stack parts-commerce platform that demonstrates real operational flow from promotional landing and product discovery to request tracking, admin data setup, and order detail management.',
     tags: ['Vue.js', 'Node.js', 'Express', 'SQL'],
     link: '/projects/automotive-parts-commerce',
+    image: '/pic/ecom/Screenshot%202026-03-05%20133045.png',
   },
 ]
 
@@ -143,21 +144,21 @@ export const EXPERIENCE: Experience[] = [
     id: 'exp1',
     role: 'Founder & Solutions Architect',
     company: 'ALP Soft',
-    period: '2020 — Present',
+    period: '2020 โ€” Present',
     description: 'Leading enterprise digital transformation initiatives. Architecting scalable systems and AI integration solutions for mid to large-scale organizations.',
   },
   {
     id: 'exp2',
     role: 'Senior Full-Stack Engineer',
     company: 'Tech Enterprise Solutions',
-    period: '2017 — 2020',
+    period: '2017 โ€” 2020',
     description: 'Spearheaded development of mission-critical applications serving 500K+ users. Led migration from legacy systems to modern cloud infrastructure.',
   },
   {
     id: 'exp3',
     role: 'Software Engineer',
     company: 'Digital Innovation Labs',
-    period: '2014 — 2017',
+    period: '2014 โ€” 2017',
     description: 'Developed and maintained enterprise-grade web applications. Specialized in performance optimization and database architecture.',
   },
 ]
@@ -202,3 +203,4 @@ export const NAV_LINKS = [
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
+
