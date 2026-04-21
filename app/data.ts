@@ -92,6 +92,17 @@ export const PROJECTS: Project[] = [
     image: '/pic/apikey/Screenshot%202026-04-21%20103134.png',
   },
   {
+    id: 'iaet-ai-ocr',
+    name: 'IAET AI – OCR Expense Assistant',
+    description:
+      'An AI-assisted system that extracts and structures financial data from payment slips and integrates it into a personal expense workflow.',
+    longDescription:
+      'A workflow-driven AI system that converts payment slip images into structured financial records for expense tracking and dashboard review.',
+    tags: ['Next.js', 'AI', 'OCR', 'API', 'OpenAI'],
+    link: '/projects/iaet-ai-ocr',
+    image: '/pic/iaetai/Screenshot%202026-04-21%20134805.png',
+  },
+  {
     id: 'automotive-parts-commerce',
     name: 'Automotive Parts Commerce Platform',
     description:
