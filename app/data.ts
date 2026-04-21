@@ -103,6 +103,28 @@ export const PROJECTS: Project[] = [
     image: '/pic/iaetai/Screenshot%202026-04-21%20134805.png',
   },
   {
+    id: 'mobile-story-quest',
+    name: 'Mobile Story Quest – Interactive Game Platform',
+    description:
+      'A mobile-first interactive story game that combines narrative choices, stage progression, and performance tracking into a structured gameplay system.',
+    longDescription:
+      'A mobile-driven interactive storytelling system where users progress through stages by making decisions that affect outcomes and scoring.',
+    tags: ['Next.js', 'Game Logic', 'UX', 'Dashboard', 'Interactive Story'],
+    link: '/projects/mobile-story-quest',
+    image: '/pic/cerfmay/Screenshot%202026-04-21%20142105.png',
+  },
+  {
+    id: 'gps-reporting-system',
+    name: 'Geo-Tagged Complaint Reporting System',
+    description:
+      'A reporting platform that captures location data from images and user input, and visualizes issues on a map for administrative tracking.',
+    longDescription:
+      'A location-aware reporting system that extracts GPS data from images and maps real-world issues for tracking and resolution.',
+    tags: ['Next.js', 'GPS', 'Map', 'EXIF', 'Workflow', 'Admin'],
+    link: '/projects/gps-reporting-system',
+    image: '/pic/reportgps/Screenshot%202026-04-21%20143257.png',
+  },
+  {
     id: 'automotive-parts-commerce',
     name: 'Automotive Parts Commerce Platform',
     description:
